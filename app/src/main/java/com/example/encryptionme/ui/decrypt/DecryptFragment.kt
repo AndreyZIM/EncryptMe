@@ -28,7 +28,9 @@ class DecryptFragment : Fragment() {
         MethodWithId(1, "Grid Method", false),
         MethodWithId(2, "Railway Fence Method", false),
         MethodWithId(3, "DES", false),
-        MethodWithId(3, "AES", false)
+        MethodWithId(4, "AES", false),
+        MethodWithId(5, "BlowfishKnowledge", false),
+        MethodWithId(6, "RSA", false)
     )
 
     override fun onCreateView(
@@ -72,9 +74,11 @@ class DecryptFragment : Fragment() {
                     this.keyInput.error = getString(R.string.field_is_required)
                     return@setOnClickListener
                 }
+                val startTime = System.currentTimeMillis()
                 val encryptedText = viewModel.decryptText(text, Integer.parseInt(key))
+                val endTime = System.currentTimeMillis()
                 this.resultText.setText(encryptedText)
-
+                Toast.makeText(requireContext(), "Decryption time: ${endTime - startTime} ms", Toast.LENGTH_SHORT).show()
             }
 
             this.copy.setOnClickListener {
