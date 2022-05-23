@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EncryptionMe</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="choose_encryption_algorithm">Choose encryption algorithm</string>
+    <string name="choose_decryption_algorithm">Choose decryption algorithm</string>
+    <string name="enter_text_to_encrypt">Enter text you want to encrypt</string>
+    <string name="enter_text_to_decrypt">Enter text you want to decrypt</string>
+    <string name="key">Key</string>
+    <string name="result">Result</string>
+    <string name="field_is_required">Field is required</string>
+    <string name="copy">Saved to clipboard</string>
+</resources>

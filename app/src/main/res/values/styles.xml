@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EncryptionInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="endIconTint">@android:color/black</item>
+        <item name="startIconTint">@android:color/black</item>
+        <item name="hintTextColor">@android:color/black</item>
+        <item name="helperTextTextColor">@android:color/black</item>
+    </style>
+
+    <style name="EncryptionEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:maxLines">20</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+</resources>
